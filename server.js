@@ -20,14 +20,8 @@ var port = process.env.PORT || 3000;        // set our port
 var router = express.Router();              // get an instance of the express Router
 
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
-router.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to julias api!' });   
-});
-
-// more routes for our API will happen here
-// test route to make sure everything is working (accessed at GET http://localhost:8080/api)
-router.get('/test', function(req, res) {
-    res.json({ message: 'hooray! welcome to filip api!' });   
+router.get('/getApartments', function(req, res) {
+    res.json({ message: 'hooray! returning apartments some day hopefully' });   
 });
 
 
